@@ -12,9 +12,11 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    min-height: 100vh;
-    background: url("/images/header/фон.jpg");
-    background: cover;
+    min-height: 64em;
+    width: 100%;
+    min-width: 64em;
+    background: url(/images/header/фон.jpg);
+    background-size: cover;
 }
 
 .header {
@@ -24,15 +26,16 @@ body {
     align-items: center;
     width: 90%;
     position: relative;
+    list-style-type: none;
 }
 .menu {
     width: 60%;
-    list-style-type: none;
 }
 .menu ul {
     display: flex;
     justify-content: space-around;
     outline-style: none;
+    list-style-type: none;
 }
 .menu-link {
     text-transform: uppercase;
@@ -157,29 +160,46 @@ body {
 }
 .portret-1 img {
     border: 15px solid goldenrod;
+    border-radius: 200px;
 }
 .portret-2 img {
     border: 15px solid goldenrod;
+    border-radius: 200px;
 }
 .portret-3 img {
     border: 15px solid goldenrod;
+    border-radius: 200px;
 }
 .money {
     width: 600px;
     height: 100px;
     font-size: 50px;
     border: 5px solid goldenrod;
+    border-radius: 100px;
     text-align: center;
     outline-style: none;
     font-family: 'Press Start 2P', cursive;
     color: goldenrod;
+    margin-top: 40px;
 }
 .button {
     outline-style: none;
     border: 5px solid goldenrod;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 20px;
+    background: url("../image/header/кнопка.svg");
+    background-size: cover;
 }
 .form {
     display: flex;
-    justify-content: center;    
+    justify-content: center; 
+    align-items: center;   
 }
-
+.shit3 {
+    border: 2px solid goldenrod;
+    border-radius: 100px;
+    margin: auto;
+}

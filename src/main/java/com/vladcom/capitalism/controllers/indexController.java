@@ -24,11 +24,14 @@ public class indexController {
         if(cap <= 1000 && cap > 0){
             verdict = "ТЫ НАШ! ПРОЛЕТАРИАТ!";
         }
-        else if(cap > 1000){
+        else if(cap > 1000 & cap < 50000){
             verdict = "РАСКУЛАЧИТЬ";
         }
         else if(cap == 0){
             verdict = "ИДИ РАБОТАЙ! ТУНЕЯДЕЦ!";
+        }
+        else if(cap > 50000){
+            verdict = "РАССТРЕЛЯТЬ!!1";
         }
         model.addAttribute("tak", verdict);
         return "index";
