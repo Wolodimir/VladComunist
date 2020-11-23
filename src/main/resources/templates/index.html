@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красный сайт</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <div class="header">
+        <div class="logo">
+            <li><a href="#" ><img src="images/header/серп_и_молот.png" alt=""></a></li>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#" class="li1 menu-link">ссылка 1</a></li>
+                <li><a href="#" class="li2 menu-link">ссылка 2</a></li>
+                <li><a href="#" class="li3 menu-link">ссылка 3</a></li>
+                <li><a href="#" class="li4 menu-link">ссылка 4</a></li>
+                <li><a href="#" class="li5 menu-link">ссылка 5</a></li>
+                <li><a href="#" class="li6 menu-link">ссылка 6</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-text">
+        <span th:text="${tak}">ДОБРОПОЖАЛОВАТЬ</span>
+        <h1>КАПИТАЛ</h1>
+    </div>
+    <a href="#" class="main-arrow">
+        <div class="arrow-down">
+            <img src="images/header/icons8-стрелка-вниз-в-круге-64.png" alt="down">
+        </div>
+    </a>
+</div>
+<div class="table">
+    <div class="table-header">
+        <span class="table-subtitle">ВВЕДИТЕ СВОЙ КАПИТАЛ</span>
+            <form class="form" method="post">
+                <input type="text" name="capital" placeholder="Введите ваш капитал в рублях..." class = "money">
+                <button type="submit" class="button">
+                    <img class="shit3" src="images/header/кнопка.svg" alt="" width="80px" height="80px">
+                </button>
+            </form>
+    </div>
+    <div class="portrets">
+        <div class="portret-1">
+            <img src="images/header/я.png" alt="" width="300px" height="300px">
+            <h4>Карл Маркс</h4>
+        </div>
+        <div class="portret-2">
+            <img src="images/header/ортем.jpg" alt="" width="300px" height="300px">
+            <h4>Фридрих Энгельс</h4>
+        </div>
+        <div class="portret-3">
+            <img src="images/header/володимир.png" alt="" width="300px" height="300px">
+            <h4>Владимир Ленин</h4>
+        </div>
+    </div>
+</div>
+       
+    
+</body>
+</html>
